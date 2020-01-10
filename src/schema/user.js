@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server-express';
 
+
 /*
 export default gql`
   extend type Query {
@@ -30,15 +31,21 @@ export default gql`
 */
 
 
+
+
 export default gql`
+  scalar JSON
+
   extend type Query {
     users: [User!]
     user(id: ID!): User
   }
+  
   type User {
     id: ID!
     username: String!
     email: String!
     role: String
+    customFields: JSON
   }
 `;

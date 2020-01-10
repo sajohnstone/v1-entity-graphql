@@ -24,3 +24,10 @@ Here is an example query to get started
 }
 ```
 
+# tests
+
+For running tests I'm using a Postman equivilent for VSCode (https://marketplace.visualstudio.com/items?itemName=humao.rest-client).  Open the .\test\exampleQuery.rest file and select 'Send Request'.
+
+# Links
+
+https://github.com/taion/graphql-type-json
