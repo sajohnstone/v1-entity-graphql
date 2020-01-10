@@ -20,12 +20,15 @@
   },
   "homepage": "https://github.com/sajohnstone/v1-entity-graphql#readme",
   "dependencies": {
+    "apollo-server": "^2.9.16",
     "apollo-server-core": "^2.9.16",
     "apollo-server-express": "^2.9.16",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "graphql-extensions": "^0.10.10",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-resolvers": "^0.3.3",
     "graphql-type-json": "^0.3.1"
   },
   "devDependencies": {

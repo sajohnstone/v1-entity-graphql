@@ -1,15 +1,13 @@
 import 'dotenv/config';
 import cors from 'cors';
 import http from 'http';
-//import DataLoader from 'dataloader';
 import express from 'express';
 import {
   ApolloServer,
 } from 'apollo-server-express';
 import schema from './schema';
-import resolvers from './resolvers';
-//import models, { sequelize } from './models';
-//import loaders from './loaders';
+import resolvers from './resolver';
+
 
 console.log(`Starting app...`);
 
@@ -33,36 +31,37 @@ const server = new ApolloServer({
       ...error,
       message,
     };
-  }});
+  }
+});
 
-  /*
-  context: async ({ req, connection }) => {
-    if (connection) {
-      return {
-        models,
-        loaders: {
-          user: new DataLoader(keys =>
-            loaders.user.batchUsers(keys, models),
-          ),
-        },
-      };
-    }
+/*
+context: async ({ req, connection }) => {
+  if (connection) {
+    return {
+      models,
+      loaders: {
+        user: new DataLoader(keys =>
+          loaders.user.batchUsers(keys, models),
+        ),
+      },
+    };
+  }
 
-    if (req) {
-      const me = await getMe(req);
+  if (req) {
+    const me = await getMe(req);
 
-      return {
-        models,
-        me,
-        secret: process.env.SECRET,
-        loaders: {
-          user: new DataLoader(keys =>
-            loaders.user.batchUsers(keys, models),
-          ),
-        },
-      };
-    }
-  },
+    return {
+      models,
+      me,
+      secret: process.env.SECRET,
+      loaders: {
+        user: new DataLoader(keys =>
+          loaders.user.batchUsers(keys, models),
+        ),
+      },
+    };
+  }
+},
 });
 */
 

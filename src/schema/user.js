@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server-express';
 
+/*
 export default gql`
   extend type Query {
     users: [User!]
@@ -24,6 +25,20 @@ export default gql`
     username: String!
     email: String!
     role: String
-    messages: [Message!]
+  }
+`;
+*/
+
+
+export default gql`
+  extend type Query {
+    users: [User!]
+    user(id: ID!): User
+  }
+  type User {
+    id: ID!
+    username: String!
+    email: String!
+    role: String
   }
 `;
