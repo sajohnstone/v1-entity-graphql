@@ -1,0 +1,25 @@
+{
+  "name": "v1-entity-graphql",
+  "version": "1.0.0",
+  "description": "A GraphQL service that works with dynamic schema and pushes data to a custom data adapter",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajohnstone/v1-entity-graphql.git"
+  },
+  "author": "@sajohnstone",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajohnstone/v1-entity-graphql/issues"
+  },
+  "homepage": "https://github.com/sajohnstone/v1-entity-graphql#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.8"
+  }
+}
