@@ -36,7 +36,7 @@ const RootQuery = new GraphQLObjectType({
                 //Here we define how to get data from database source
 
                 //this will return the book with id passed in argument by the user
-                return books.find((item) => { return item.id == args.id});
+                return fakeBookDatabase.find((item) => { return item.id == args.id});
             }
         }
     }
