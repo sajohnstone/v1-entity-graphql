@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "name": "erc"
+  },
+  {
+    "id": 2,
+    "name": "report"
+  },
+  {
+    "id": 3,
+    "name": "safetyoffice"
+  },
+  {
+    "id": 4,
+    "name": "investigation"
+  }
+ ]

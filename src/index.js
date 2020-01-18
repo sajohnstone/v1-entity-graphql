@@ -65,6 +65,16 @@ context: async ({ req, connection }) => {
 });
 */
 
+console.log("checking database...")
+import * as db from 'database'
+db.find({ name: 'report' },  (err, docs) => {
+  // docs is an array containing documents Mars, Earth, Jupiter
+  // If no document is found, docs is equal to []
+  if (err) console.log("Error" + err);
+  console.log(docs);
+});
+
+
 server.applyMiddleware({ app, path: '/graphql' });
 
 const httpServer = http.createServer(app);

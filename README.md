@@ -24,6 +24,9 @@ Here is an example query to get started
 }
 ```
 
+# persistance
+It uses nedb to simulate a database connection, but this could easily replace with full blown MongoDb.
+
 # tests
 
 For running tests I'm using a Postman equivilent for VSCode (https://marketplace.visualstudio.com/items?itemName=humao.rest-client).  Open the .\test\exampleQuery.rest file and select 'Send Request'.
@@ -31,3 +34,4 @@ For running tests I'm using a Postman equivilent for VSCode (https://marketplace
 # Links
 
 https://github.com/taion/graphql-type-json
+https://github.com/louischatriot/nedb

@@ -1,28 +1,10 @@
-POST https://api.github.com/graphql
+POST http://localhost:3000/graphql
 Content-Type: application/json
 X-REQUEST-TYPE: GraphQL
 
-query ($name: String!, $owner: String!) {
-  repository(name: $name, owner: $owner) {
-    name
-    fullName: nameWithOwner
-    description
-    diskUsage
-    forkCount
-    stargazers(first: 5) {
-        totalCount
-        nodes {
-            login
-            name
-        }
-    }
-    watchers {
-        totalCount
-    }
+query  {
+  users {
+    id
+    customFields
   }
-}
-
-{
-    "name": "vscode-restclient",
-    "owner": "Huachao"
 }
