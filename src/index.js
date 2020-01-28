@@ -7,6 +7,7 @@ import {
 } from 'apollo-server-express';
 import schema from './schema';
 import resolvers from './resolver';
+import db from './database'
 
 
 console.log(`Starting app...`);
@@ -66,8 +67,8 @@ context: async ({ req, connection }) => {
 */
 
 console.log("checking database...")
-import * as db from 'database'
-db.find({ name: 'report' },  (err, docs) => {
+
+db.find({ name: 'report' }, (err, docs) => {
   // docs is an array containing documents Mars, Earth, Jupiter
   // If no document is found, docs is equal to []
   if (err) console.log("Error" + err);
